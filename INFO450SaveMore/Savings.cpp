@@ -8,7 +8,7 @@ using namespace std;
 
 Savings::Savings() : BankAccount()
 {
-	withdrawFee = 0;
+	withdrawFee = 2.00;
 }
 
 Savings::Savings(int a, double i, double b, int w) : BankAccount(a, i, b)
@@ -18,6 +18,7 @@ Savings::Savings(int a, double i, double b, int w) : BankAccount(a, i, b)
 
 void Savings::Display()
 {
+	cout << "" << endl; 
 	cout << "----Savings Account Info----" << endl;
 	cout << "Savings Account Number: " << acctNumber << endl;
 	cout << "Savings Account Balance: $ " << balance << endl;

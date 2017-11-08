@@ -1,5 +1,7 @@
 #pragma once
 #include "BankAccount.h"
+#include <string>
+
 class Certificate : public BankAccount
 {
 private:

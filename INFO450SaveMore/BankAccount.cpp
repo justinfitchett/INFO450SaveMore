@@ -4,17 +4,18 @@
 
 using namespace std;
 
+//Constructors
 BankAccount::BankAccount()
 {
-	acctNumber = 0;
-	interestRate = 0;
-	balance = 0;
+	acctNumber = 0; //Default values
+	interestRate = 0; // Default values
+	balance = 0; //Default values
 
 }
 
 BankAccount::BankAccount(int a, double i, double b)
 {
-	acctNumber = a;
+	acctNumber = a; //Intiates 
 	interestRate = i;
 	balance = b;
 }

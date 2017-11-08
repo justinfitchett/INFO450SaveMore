@@ -10,4 +10,6 @@ public:
 	Checking(int a, double i, double b, int c);
 	void GetInput();
 	void Display();
+	void BalanceCheck();
+	void OrderingChecks();
 };

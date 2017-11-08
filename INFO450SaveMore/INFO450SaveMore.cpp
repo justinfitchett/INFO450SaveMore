@@ -14,16 +14,12 @@ using namespace std;
 
 int main()
 {
-	string name;
 	string answer = "";
 	BankAccount *pBA = NULL;
 
 	cout << "Welcome to the Save More Bank Interface Program.\n";
 
-	cout << "Please enter your name: "; // Prompts user to ask for name.
-	cin >> name;
-
-	while (name != "") 
+	while (answer!= "e" || "E") 
 	{
 		cout << "\nPlease choose which account that you want to view:\nSelect (c) for Checking, (s) for Savings, (cd) for Certificate of Deposit, or (e) to exit the program.  ";
 		getline(cin, answer);
@@ -46,9 +42,11 @@ int main()
 			pBA->GetInput();
 			pBA->Display();
 		}
-		else if (answer == "e" || answer == "E")
+		else if (answer == "e" || answer == "E") //Exits the program
 		{
-			cout << "\nThank you for choosing Save More!!!\n \nGoodbye :)" << endl;
+			cout << "\nThank you for choosing Save More!!!\n \nGoodbye :)\n " << endl;
+
+			return 0;
 		}
 	}
 

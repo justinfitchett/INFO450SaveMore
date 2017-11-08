@@ -6,9 +6,9 @@ using namespace std;
 class BankAccount
 {
 protected:
-	int acctNumber;
-	double interestRate;
-	double balance;
+	int acctNumber;  //Default values
+	double interestRate; //Default Values
+	double balance;  //Default values
 
 public:
 	BankAccount();

@@ -6,6 +6,7 @@
 
 using namespace std;
 
+//Constructors
 Certificate::Certificate() : BankAccount()
 {
 	interestRate = 0;
@@ -20,6 +21,7 @@ Certificate::Certificate(int a, double i, double b, int t, double w) : BankAccou
 
 void Certificate::Display()
 {
+	cout << "" << endl;
 	cout << "----Certificate of Deposit (CD) Info----" << endl;
 	cout << "CD Account Number: " << acctNumber << endl;
 	cout << "CD Balance: $ " << balance << endl;
@@ -62,7 +64,7 @@ double Certificate::AssessInterest(double bal, double ir)
 	return bal;
 }
 
-double Certificate::WithdrawFee(double bal)
+double Certificate::WithdrawFee(double bal) //If funds are withdrawn before the term is over, a 10% fee 
 {
 	bal = bal - bal * .10;
 
