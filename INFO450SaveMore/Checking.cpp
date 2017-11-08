@@ -39,20 +39,20 @@ void Checking::GetInput()
 
 void Checking::OrderingChecks()
 {
-	cout << "Checks cost $15. Payment has been charged to your checking account. \n" << endl;
+	cout << "The cost for checks is $15. Payment has been charged to your checking account. \n" << endl;
 
 	balance -= 15;
 
 	BalanceCheck();
 }
 
-//checks to see if balance is over 500, charges fee otherwise
+
 void Checking::BalanceCheck()
 {
 	if (balance < 500)
 	{
 		balance -= 5;
 
-		cout << "Your account has fallen below $500. A penalty fee of $5 has been deducted from your account.\n";
+		cout << "A penalty fee of $5 has been deducted from your account.\n";
 	}
 }
